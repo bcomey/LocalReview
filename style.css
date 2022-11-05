@@ -2,41 +2,173 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color:rgb(255,255,250);
+  background-color:rgb(255,255,255);
   font-family: 'Manrope', sans-serif;
+  overflow-x:hidden;
 }
 .exists{
-  position:absolute;
+ 
   display:flex;
   justify-content:center;
   align-items:center;
-  
+  outline:none;
+  font-family: 'Manrope', sans-serif;
+  box-shadow:none;
+  border:none;
+}
+#Header{
+    position:absolute;
+    color:rgb(248, 36, 79);
+    width:100%;
+    height:15%;
+    left:0%;
+    top:0%;
+}
+#Title{
+    width:15%;
+    left:0%;
+    top:0%;
+    height:100%;
+    font-size:2vw;
+}
+#CreatePost{
+    position:absolute;
+    width:80px;
+    height:80px;
+    left:92%;
+    top:20%;
+    font-size:5vw;
+    background:none;
+    //border:3px solid black;
+    background-color:rgb(248, 36, 79);
+    color:white;
+    border-radius:50px;
+
+}
+#ReviewContainer{
+    display:grid;
+    width:90%;
+    height:100%;
+    position:absolute;
+    left:8%;
+    top:15%;
+    row-gap:0px;
+    column-gap:0px;
+    
+    grid-template-columns: 266px 266px 266px 266px;
+    grid-template-rows:154px 154px 154px;
+    
 }
 .review{
   box-shadow:0px 0px 5px black;
   background-color:white;
-  width:20%;
-  height:20%;
+  width:256px;
+  height:144px;
   border-radius:20px;
   padding:10px;
-}
-.reviewName{
-  width:100%;
-  height:40%;
-  left:0%;
-  top:0%;
-  font-size:1.6vw;
+  font-size:1.4vw;
 }
 .reviewDesc{
   width:100%;
   height:80%;
   left:3%;
   top:30%;
-  
   overflow-y:hidden;
-  
   text-overflow: ellipsis;
-      
-      
 }
+#Pitch{
+    position:absolute;
+    width:100%;
+    height:20%;
+    left:0%;
+    top:20%;
+    font-size:5vw;
+}
+#SubPitch{
+    position:absolute;
+    width:100%;
+    height:20%;
+    left:0%;
+    top:35%;
+    font-size:2vw;
+}
+#ReviewsButton{
+    position:absolute;
+    width:200px;
+    height:70px;
+    border-radius:20px;
+    left:40%;
+    top:55%;
+    background-color:rgb(248, 36, 79);
+    color:white;
+    font-size:2vw;
+    text-decoration:none;
+}
+#SlideReview1{
+    position:absolute;
+    left:-50%;
+    top:72%;
+    animation-name:slide;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+#SlideReview2{
+    position:absolute;
+    left:-50%;
+    top:72%;
+    animation-name:slide;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay:2s;
+}
+#SlideReview3{
+    position:absolute;
+    left:-50%;
+    top:72%;
+    animation-name:slide;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay:4s;
+}
+#SlideReview4{
+    position:absolute;
+    left:-50%;
+    top:72%;
+    animation-name:slide;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay:6s;
+}
+#SlideReview5{
+    position:absolute;
+    left:-50%;
+    top:72%;
+    animation-name:slide;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay:8s;
+}
+#SlideReview6{
+    position:absolute;
+    left:-50%;
+    top:72%;
+    animation-name:slide;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay:10s;
+}
+@keyframes slide{
+    0%{left:-20%;}
+    100%{left:120%;}
+}
+.red{
+    color:rgb(248, 36, 79);
+}
+
 

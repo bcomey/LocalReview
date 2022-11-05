@@ -9,11 +9,32 @@
 </head>
 
 <body>
-  <div class="exists review">
-    <!--<div class="exists reviewName">Antonellis</div>-->
-    <div class="reviewDesc">Last week, I tried antonellis cheese shop for the first time, and it was really good! We tried a cheddar cheese. the people were really nice and the cheese tasted good.</div>
+  <div id="Header">
+    <div class="exists" id="Title"><b>RiseReview</b></div>
+    <button onclick="createConversation()" class="exists" id="CreatePost">+</button>
   </div>
-  <script src="script.js"></script>
+  <div class="exists" id="Pitch"><b>Knowledge is</b> &nbsp <span class="red"><b>Power</b></span></div>
+  <div class="exists" id="SubPitch">For Both Businesses And Customers.</div>
+  <a href="reviews.html" class="exists" id="ReviewsButton"><b>Explore</b></a>
+  <button onclick="getInput()" class="exists review" id="SlideReview1">
+    <div class="reviewDesc">Last week, I tried Antonellis cheese shop for the first time, and it was really good! We tried a cheddar cheese. the people were really nice and the cheese tasted good.</div>
+  </button>
+  <button onclick="getInput()" class="exists review" id="SlideReview2">
+    <div class="reviewDesc">Chicken Gs special sauce is so good! Its really creamy and reminds me of steak. Would highly recommend to anybody that likes chicken.</div>
+  </button>
+  <button onclick="getInput()" class="exists review" id="SlideReview3">
+    <div class="reviewDesc">Panda Express fried rice is delicious, you have to try it. The people were really nice and gave me an extra egg roll!</div>
+  </button>
+  <button onclick="getInput()" class="exists review" id="SlideReview4">
+    <div class="reviewDesc">Yesterday I tried the mocha frappucino at starbucks and it was amazing.</div>
+  </button>
+  <button onclick="getInput()" class="exists review" id="SlideReview5">
+    <div class="reviewDesc">Russian School of Math taught my son a lot of math! Would recommend to students interested in math</div>
+  </button>
+  
+  
+  <script src="script2.js"></script>
+  <script src="questions.js"></script>
 </body>
 
 </html>
