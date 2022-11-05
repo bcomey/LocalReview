@@ -7,7 +7,8 @@ class Goal {
     }
 
     getProgress() {
-        return (this.progress[this.progress.length-1])[1];
+        let progress = this.progress[this.progress.length-1]
+        return progress[1];
     }
     setProgress(coord) {
         this.progress.push(coord);
@@ -16,4 +17,3 @@ class Goal {
 
 let homework = new Goal("7.2 HW", [0, 20]);
 homework.setProgress([20, 50])
-alert(homework.getProgress); //should be 50
