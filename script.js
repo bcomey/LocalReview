@@ -1,14 +1,13 @@
 class Goal {
-    constructor (name, progress) {
+    constructor (name, progress, goal) {
         this.name = name;
-        this.start = 0;
-        this.end = 100;
         this.progress = progress;
     }
 
     getProgress() {
-        let progress = this.progress[this.progress.length-1]
-        return progress[1];
+        let current = this.progress[this.progress.length-1];
+        let start = this.progress[0];
+        return current[1] // % done
     }
     setProgress(coord) {
         this.progress.push(coord);
