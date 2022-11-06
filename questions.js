@@ -12,7 +12,7 @@ for(var i=0;i<post_list.length;i++){
   var div = document.createElement('div');
   var button = document.createElement('button');
   button.className = 'exists review';
-  div.textContent = post_list[i].title + "\n" + post_list[i].content;
+  div.textContent = post_list[i].content;
   div.className = "reviewDesc";
   button.appendChild(div);
   reviewContainer.appendChild(button);
