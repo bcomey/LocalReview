@@ -5,7 +5,7 @@ Take text input at create post
 
 */
 var post_list=JSON.parse(localStorage.getItem("Posts"));
-
+alert(post_list)
 if(post_list==null){
   post_list=[];
 }
@@ -17,10 +17,10 @@ function getInput()
 {
   //RUNS WHEN SUBMIT POST
   //Creates a post object
-
-  var post = new Post(document.getElementById('title').value) 
+  var post = new Post(document.getElementById('titleInput').value, document.getElementById("descInput").value); 
   post_list.push(post);
   localStorage.setItem("Posts",JSON.stringify(post_list))
+  alert(localStorage.getItem("Posts"))
 
   window.location="reviews.html";
   
@@ -34,8 +34,9 @@ function createConversation()
 
 
 class Post {
- constructor(post) {
-    this.post = post;
+ constructor(title, content) {
+    this.title = title;
+    this.content = content;
     this.upvotes = 0;
     this.replies=[];
 }
