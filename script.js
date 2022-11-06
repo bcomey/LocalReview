@@ -5,7 +5,6 @@ Take text input at create post
 
 */
 var post_list=JSON.parse(localStorage.getItem("Posts"));
-alert(post_list)
 if(post_list==null){
   post_list=[];
 }
@@ -20,7 +19,6 @@ function getInput()
   var post = new Post(document.getElementById('titleInput').value, document.getElementById("descInput").value); 
   post_list.push(post);
   localStorage.setItem("Posts",JSON.stringify(post_list))
-  alert(localStorage.getItem("Posts"))
 
   window.location="reviews.html";
   

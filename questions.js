@@ -7,7 +7,6 @@ function createConversation()
 
 //displaying the posts
 var post_list=JSON.parse(localStorage.getItem("Posts"));
-alert(post_list)
 for(var i=0;i<post_list.length;i++){
   var reviewContainer = document.getElementById("ReviewContainer");
   var div = document.createElement('div');
