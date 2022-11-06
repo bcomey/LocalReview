@@ -15,6 +15,7 @@ html, body {
   font-family: 'Manrope', sans-serif;
   box-shadow:none;
   border:none;
+  text-decoration:none;
 }
 #Header{
     position:absolute;
@@ -23,6 +24,7 @@ html, body {
     height:15%;
     left:0%;
     top:0%;
+    
 }
 #Title{
     width:15%;
@@ -30,6 +32,8 @@ html, body {
     top:0%;
     height:100%;
     font-size:2vw;
+    text-decoration:none;
+    color:rgb(248, 36, 79);
 }
 #CreatePost{
     position:absolute;
@@ -39,24 +43,27 @@ html, body {
     top:20%;
     font-size:5vw;
     background:none;
-    //border:3px solid black;
+
     background-color:rgb(248, 36, 79);
     color:white;
     border-radius:50px;
-
+    transition:0.3s all;
+}
+#CreatePost:hover{
+    transform:scale(1.1);
 }
 #ReviewContainer{
     display:grid;
     width:90%;
     height:100%;
     position:absolute;
-    left:8%;
+    left:7%;
     top:15%;
     row-gap:0px;
     column-gap:0px;
     
-    grid-template-columns: 266px 266px 266px 266px;
-    grid-template-rows:154px 154px 154px;
+    grid-template-columns: 276px 276px 276px 266px;
+    grid-template-rows:164px 164px 164px;
     
 }
 .review{
@@ -99,10 +106,16 @@ html, body {
     border-radius:20px;
     left:40%;
     top:55%;
+    border:3px solid rgb(248,36,79);
     background-color:rgb(248, 36, 79);
     color:white;
     font-size:2vw;
     text-decoration:none;
+    transition:0.3s all;
+}
+#ReviewsButton:hover{
+    filter:brightness(70%);
+   
 }
 #SlideReview1{
     position:absolute;
@@ -166,6 +179,73 @@ html, body {
 @keyframes slide{
     0%{left:-20%;}
     100%{left:120%;}
+}
+#DescImage{
+    width:350px;
+    height:350px;
+    position:absolute;
+    top:105%;
+    left:60%;
+}
+#Desc{
+    width:40%;
+    position:absolute;
+    left:20%;
+    height:30%;
+    top:120%;
+    font-size:2vw;
+    text-align:center;
+}
+#titleInput{
+    width:50%;
+    height:10%;
+    position:absolute;
+    left:25%;
+    top:15%;
+    font-size:2vw;
+    text-align:center;
+    outline:none;
+    border:3px solid rgb(200,200,200);
+    border-radius:30px;
+    font-family: 'Manrope', sans-serif;
+}
+#descInput{
+    width:47%;
+    height:40%;
+    position:absolute;
+    left:25%;
+    top:30%;
+    font-size:2vw;
+    text-align:left;
+    padding:20px;
+    outline:none;
+    border:3px solid rgb(200,200,200);
+    border-radius:30px;
+    font-family: 'Manrope', sans-serif;
+}
+#InputButton{
+    position:absolute;
+    width:200px;
+    height:70px;
+    border-radius:20px;
+    left:42%;
+    top:83%;
+    border:3px solid rgb(248,36,79);
+    background-color:rgb(248, 36, 79);
+    color:white;
+    font-size:2vw;
+    text-decoration:none;
+    transition:0.3s all;
+}
+#InputButton:hover{
+    filter:brightness(70%);
+}
+#inputInstructions{
+    width:100%;
+    height:10%;
+    font-size:3vw;
+    position:absolute;
+    top:4%;
 }
 .red{
     color:rgb(248, 36, 79);
