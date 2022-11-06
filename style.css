@@ -201,7 +201,7 @@ html, body {
     height:10%;
     position:absolute;
     left:25%;
-    top:15%;
+    top:25%;
     font-size:2vw;
     text-align:center;
     outline:none;
@@ -211,10 +211,10 @@ html, body {
 }
 #descInput{
     width:47%;
-    height:40%;
+    height:30%;
     position:absolute;
     left:25%;
-    top:30%;
+    top:40%;
     font-size:2vw;
     text-align:left;
     padding:20px;
@@ -245,7 +245,7 @@ html, body {
     height:10%;
     font-size:3vw;
     position:absolute;
-    top:4%;
+    top:14%;
 }
 .red{
     color:rgb(248, 36, 79);
