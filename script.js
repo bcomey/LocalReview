@@ -10,7 +10,7 @@ if(post_list==null){
 }
 //var post_list = [];
 
-
+//default posts
 
 function getInput()
 {

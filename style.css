@@ -291,6 +291,10 @@ html, body {
     font-size:3vw;
     transition:0.3s all;
 }
+#check{
+    position:relative;
+    top:45%;
+}
 #Upvote:hover{
     transform:scale(1.1);
 }
