@@ -20,6 +20,11 @@ for(var i=0;i<post_list.length;i++){
   var reviewContainer = document.getElementById("ReviewContainer");
   var div = document.createElement('div');
   var button = document.createElement('button');
+  if (post_list[i].upvotes > 0) {
+    var check = document.createElement('div');
+    check.setAttribute('id', 'check');
+  }
+  button.appendChild(check);
   button.className = 'exists review';
   button.setAttribute("id", i);
   button.setAttribute("onclick", "viewPost(this.id)");
