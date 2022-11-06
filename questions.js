@@ -6,7 +6,7 @@ function createConversation()
 
 function viewPost(title, content)
 {
-  alert(content)
+ // alert(content)
  localStorage.setItem("title", title);
  localStorage.setItem("content", content);
  
