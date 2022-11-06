@@ -1,4 +1,5 @@
 
+
 //var post_list1 = localStorage.getItem("postlist");
 //alert((localStorage.getItem("Posts")));
 /*
@@ -81,40 +82,15 @@ var posts = JSON.parse(localStorage.getItem("Posts"));
 
 
 for(var i=0;i<posts.length;i++){
-  var string = ("numberOfReplies" + (i+1).toString())
-  var numberOfReplies = posts[i].replies.length;
-  if (numberOfReplies > 3)
-  {
-    numberOfReplies = 3;
-  }
-
-  if (numberOfReplies == 1) {
-    document.getElementById(string).innerHTML =  numberOfReplies + " reply";
-  } else {
-    document.getElementById(string).innerHTML =  numberOfReplies + " replies";
-  }
-  
-
-  if(i==0){
-    document.getElementById("text1").innerHTML=posts[0].post;
-    document.getElementById("Post1").classList.remove("Invis");
-  }
-  if(i==1){
-    document.getElementById("text2").innerHTML=posts[1].post;
-    document.getElementById("Post2").classList.remove("Invis");
-  }
-  if(i==2){
-    document.getElementById("text3").innerHTML=posts[2].post;
-    document.getElementById("Post3").classList.remove("Invis");
-  }
-  if(i==3){
-    document.getElementById("text4").innerHTML=posts[3].post;
-    document.getElementById("Post4").classList.remove("Invis");
-  }
-  if(i==4){
-    document.getElementById("text5").innerHTML=posts[4].post;
-    document.getElementById("Post5").classList.remove("Invis");
-  }
+  var reviewContainer = document.getElementById("ReviewContainer");
+  var div = document.createElement('div');
+  var button = document.createElement('button');
+  button.className = 'exists review';
+  div.textContent = posts[i].post;
+  div.className = "reviewDesc";
+  button.appendChild(div);
+  reviewContainer.appendChild(button);
+     
 }
 
 
